@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-top: 100px;
+}
+
+.card {
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  color: white;
+}
+
+.card {
+  margin-left: 50px;
+}
+
+.card:nth-child(3n + 1) {
+  background: linear-gradient(90deg, #ffb899 0%, #fe8f96 31%, #ff9297 50%);
+}
+
+.card:nth-child(3n + 2) {
+  background: linear-gradient(90deg, #86c6f6 0%, #59b0ee 31%, #2697e5 50%);
+}
+
+.card:nth-child(3n + 3) {
+  background: linear-gradient(90deg, #14d1bb 0%, #58d6ca 31%, #79d9d0 50%);
+}
+
+.card::after,
+.card::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: white;
+  opacity: 0.2;
+  transition: all 0.2s linear;
+}
+
+.card::after {
+  right: -65px;
+  top: -20px;
+}
+
+.card::before {
+  right: -10px;
+  bottom: -70px;
+}
+
+.card:hover::before {
+  transform: translate(-170px, 0px);
+}
+
+.card:hover::after {
+  transform: translate(-290px, 0px);
+}
+
+.card-text-box {
+  margin: 30px 0 30px 30px;
+}
+
+.card-heading {
+  font-size: 18px;
+}
+
+.card-counter {
+  margin-top: 15px;
+  font-size: 26px;
+}
+
+.card-percentage-change {
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+.chart-line::after,
+.bookmark::after,
+.diamond::after {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 35px;
+}
+.chart-line::after {
+  content: url(../icons/chart-line.svg);
+}
+
+.bookmark::after {
+  content: url(../icons/bookmark-outline.svg);
+}
+
+.diamond::after {
+  content: url(../icons/diamond.svg);
+}
