@@ -4,7 +4,7 @@
   padding: 0;
 }
 
-.container {
+.card-container {
   margin-top: 100px;
 }
 
@@ -82,22 +82,23 @@
   font-size: 14px;
 }
 
-.chart-line::after,
-.bookmark::after,
-.diamond::after {
+.chart-line-ico::after,
+.bookmark-ico::after,
+.diamond-ico::after {
   position: absolute;
   width: 24px;
   height: 24px;
   right: 35px;
 }
-.chart-line::after {
+.chart-line-ico::after {
   content: url(../icons/chart-line.svg);
 }
 
-.bookmark::after {
+.bookmark-ico::after {
   content: url(../icons/bookmark-outline.svg);
 }
 
-.diamond::after {
+.diamond-ico::after {
   content: url(../icons/diamond.svg);
 }
+
