@@ -86,6 +86,7 @@
 .bookmark-ico::after,
 .diamond-ico::after {
   position: absolute;
+  display: block;
   width: 24px;
   height: 24px;
   right: 35px;
@@ -101,4 +102,3 @@
 .diamond-ico::after {
   content: url(../icons/diamond.svg);
 }
-
