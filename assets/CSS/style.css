@@ -83,6 +83,7 @@
   display: block;
   width: 24px;
   height: 24px;
+  top: 25px;
   right: 35px;
 }
 .chart-line-ico::after {
