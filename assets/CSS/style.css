@@ -12,14 +12,11 @@
   position: relative;
   display: inline-block;
   width: 300px;
+  padding: 30px 0px 30px 30px;
+  margin-left: 50px;
   border-radius: 10px;
   overflow: hidden;
   color: white;
-  padding: 30px 0px 30px 30px;
-}
-
-.card {
-  margin-left: 50px;
 }
 
 .card:nth-child(3n + 1) {
